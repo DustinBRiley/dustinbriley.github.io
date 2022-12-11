@@ -230,7 +230,6 @@ a {
 
         #main #feat ul {
             display: flex;
-            flex-direction: column;
             list-style: none;
             min-height: 70vh;
             padding: 0;
@@ -238,6 +237,7 @@ a {
 
             #main #feat ul li {
                 margin: 0 auto;
+                justify-content: space-between;
             }
 
                 #main #feat ul li img {
