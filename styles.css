@@ -339,7 +339,7 @@ table {
             max-height: 10em;
         }
 
-#email, #message {
+#email, #message, #fname, #lname {
     background-color: #1c1d1eb4;
 }
 
