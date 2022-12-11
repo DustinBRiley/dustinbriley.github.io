@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dustin Riley: Games</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <input type="checkbox" id="toggle">
@@ -23,6 +24,7 @@
                     <a href="./javascript.html">JAVASCRIPT</a>
                     <a href="./htmlcss.html">HTML & CSS</a>
                     <a href="./python.html">PYTHON</a>
+                    <a href="./datastructures.html">DATA STRUCTURES</a>
                 </div>
             </div>
             <a href="./games.html"><li class="active">GAMES</li></a>
@@ -34,5 +36,39 @@
             <li class="git"><a href="https://github.com/dustinbriley" target=”_blank”><img src="./img/github.png" alt="github"></a></li>
         </ul>
     </nav>
+    <div id="main">
+        <section>
+            <div id="feat">
+                <h2>Space Ace v3</h2>
+                <video src="./games/ssv3.mp4" width = "100%" controls></video>
+                <p>currently a work in progress in GODOT</p>
+            </div>
+            <div>
+                <a href="https://dustinbriley.itch.io/space-ace-v2"><h2>Space Ace v2</h2></a>
+                <a href="https://dustinbriley.itch.io/space-ace-v2"><img src="./games/ssv2.gif" alt="Space Ace v2"></a>
+                <a href="https://dustinbriley.itch.io/space-ace-v2"><h2>Download</h2></a>
+            </div>
+            <div>
+                <a href="https://dustinbriley.itch.io/space-ace-v1"><h2>Space Ace v1</h2></a>
+                <a href="https://dustinbriley.itch.io/space-ace-v1"><img src="./games/ssv1.gif" alt="Space Ace v1"></a>
+                <a href="https://dustinbriley.itch.io/space-ace-v1"><h2>Download</h2></a>
+            </div>
+            <div>
+                <a href="https://dustinbriley.itch.io/avoidance"><h2>Avoidance</h2></a>
+                <a href="https://dustinbriley.itch.io/avoidance"><img src="./games/avoid.gif" alt="Avoidance"></a>
+                <a href="https://dustinbriley.itch.io/avoidance"><h2>Download</h2></a>
+            </div>
+        </section>
+    </div>
+    <div>
+        <h2>Contact Me</h2>
+        <form action="mailto:dustinrileywork@gmail.com" method="post" autocomplete="on">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
 </body>
 </html>

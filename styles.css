@@ -339,6 +339,18 @@ table {
             max-height: 10em;
         }
 
+#email, #message {
+    background-color: #1c1d1eb4;
+}
+
+#email {
+    min-width: 40vw;
+}
+
+#message {
+    min-width: 80vw;
+    min-height: 10vh;
+}
 @media (min-width: 1040px) {
     body {
         font-size: 200%;
