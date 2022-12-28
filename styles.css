@@ -228,22 +228,25 @@ a {
         min-width: 100%;
     }
 
+    #main #feat iframe {
+        max-width: 100%;
+        max-height: max-content;
+    }
+
         #main #feat ul {
-            display: flex;
+            display: block;
             list-style: none;
-            min-height: 70vh;
             padding: 0;
         }
 
             #main #feat ul li {
-                margin: 0 auto;
-                justify-content: space-between;
+                padding: auto;
+                justify-content: center;
             }
 
-                #main #feat ul li img {
-                    height: 60vh;
-                    max-width: 100%;
-                }
+            #main #feat ul li img {
+                max-width: 100%;
+            }
 
     #main section {
         display: block;
@@ -537,6 +540,25 @@ table {
                 min-height: stretch;
                 max-height: 40vh;
                 max-width: 54vh;
+            }
+
+    #main #feat ul {
+        display: flex;
+        list-style: none;
+        min-height: 70vh;
+        padding: 0;
+    }
+
+        #main #feat ul li {
+            display: block;
+            min-width: 33%;
+            max-width: 33%;
+            margin: auto;
+            justify-content: space-between;
+        }
+
+            #main #feat ul li img {
+                max-width: 100%;
             }
 
 #res {
