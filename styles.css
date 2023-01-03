@@ -1,6 +1,8 @@
 body {
     background-image: url("./img/bg.jpg");
     background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     vertical-align: stretch;
     text-align: center;
     color: #82b7cb;
