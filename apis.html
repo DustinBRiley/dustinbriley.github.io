@@ -17,7 +17,6 @@
             <div id="dropdown">
                 <a href="./index.html"><li>PORTFOLIO</li></a>
                 <div id="dropdown-menu">
-                    <a href="./apis.html" class="active">APIS</a>
                     <a href="./java.html">JAVA</a>
                     <a href="./cpp.html">C++</a>
                     <a href="./javascript.html">JAVASCRIPT</a>
@@ -27,9 +26,9 @@
                     <a href="./sql.html">SQL</a>
                     <a href="./datastructures.html">DATA STRUCTURES</a>
                     <a href="./assembly.html">ASSEMBLY</a>
-
                 </div>
             </div>
+            <a href="./apis.html" class="active"><li>APIS</li></a>
             <a href="./games.html"><li>GAMES</li></a>
             <a href="./resume.html"><li>RESUME</li></a>
         </ul>
@@ -48,72 +47,68 @@
             <tr>
                 <th>ROUTE</th>
                 <th>GET</th>
+            </tr>
+            <tr>
+                <td>/quotes/</td>
+                <td>All quotes are returned</td>
+            </tr>
+            <tr>
+                <td>/quotes/?id=4</td>
+                <td>The specific quote</td>
+            </tr>
+            <tr>
+                <td>/quotes/?author_id=10</td>
+                <td>All quotes from author_id=10</td>
+            </tr>
+            <tr>
+                <td>/quotes/?category_id=8</td>
+                <td>All quotes in category_id=8</td>
+            </tr>
+            <tr>
+                <td>/quotes/?author_id=3&category_id=4</td>
+                <td>All quotes from authorId=3 that are in category_id=4</td>
+            </tr>
+            <tr>
+                <td>/authors/</td>
+                <td>All authors with their id</td>
+            </tr>
+            <tr>
+                <td>/authors/?id=5</td>
+                <td>The specific author with their id</td>
+            </tr>
+            <tr>
+                <td>/categories/</td>
+                <td>All categories with their ids (id, category)</td>
+            </tr>
+            <tr>
+                <td>/categories/?id=7</td>
+                <td>The specific category with its id</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>ROUTE</th>
                 <th>POST</th>
                 <th>PUT</th>
                 <th>DELETE</th>
             </tr>
             <tr>
                 <td>/quotes/</td>
-                <td>All quotes are returned</td>
                 <td>created quote (id, quote, author_id, category_id)</td>
                 <td>updated quote (id, quote, author_id, category_id)</td>
                 <td>id of deleted quote</td>
             </tr>
             <tr>
-                <td>/quotes/?id=4</td>
-                <td>The specific quote</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>/quotes/?author_id=10</td>
-                <td>All quotes from author_id=10</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>/quotes/?category_id=8</td>
-                <td>All quotes in category_id=8</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>/quotes/?author_id=3&category_id=4</td>
-                <td>All quotes from authorId=3 that are in category_id=4</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
                 <td>/authors/</td>
-                <td>All authors with their id</td>
                 <td>created author (id, author)</td>
                 <td>updated author (id, author)</td>
                 <td>id of deleted author</td>
             </tr>
             <tr>
-                <td>/authors/?id=5</td>
-                <td>The specific author with their id</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
                 <td>/categories/</td>
-                <td>All categories with their ids (id, category)</td>
                 <td>created category (id, category)</td>
                 <td>updated category (id, category)</td>
                 <td>id of deleted category</td>
-            </tr>
-            <tr>
-                <td>/categories/?id=7</td>
-                <td>The specific category with its id</td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
         </table>
         <h1>States API</h1>
@@ -125,72 +120,52 @@
             <tr>
                 <th>ROUTE</th>
                 <th>GET</th>
-                <th>POST</th>
-                <th>PATCH</th>
-                <th>DELETE</th>
             </tr>
             <tr>
                 <td>/states/</td>
                 <td>All state data returned</td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>/states/?contig=true</td>
                 <td>All state data for contiguous states (Not AK or HI)</td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>/states/?contig=false</td>
                 <td>All state data for non-contiguous states (AK, HI)</td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>/states/:state</td>
                 <td>All data for the state URL parameter</td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>/states/:state/funfact</td>
                 <td>A random fun fact for the state URL parameter</td>
-                <td>The result received from MongoDB</td>
-                <td>The result received from MongoDB</td>
-                <td>The result received from MongoDB</td>
             </tr>
             <tr>
                 <td>/states/:state/capital</td>
                 <td>{ 'state': stateName, 'capital': capitalName }</td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>/states/:state/nickname</td>
                 <td>{ 'state': stateName, 'nickname': nickname }</td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>/states/:state/population</td>
                 <td>{ 'state': stateName, 'population': population }</td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>/states/:state/admission</td>
                 <td>{ 'state': stateName, 'admitted': admissionDate }</td>
-                <td></td>
-                <td></td>
-                <td></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>ROUTE</th>
+                <th>POST/PATCH/DELETE</th>
+            </tr>
+            <tr>
+                <td>/states/:state/funfact</td>
+                <td>The result received from MongoDB</td>
             </tr>
         </table>
     </div>
