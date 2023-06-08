@@ -25,35 +25,6 @@ h2 {
     background-position: center;
 }
 
-#intro {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 99.1vh;
-    text-shadow: 5px 5px #1c0464b4;
-}
-
-    #intro img {
-        visibility: hidden;
-        max-height: 100px;
-    }
-
-    #intro a {
-        background-image: url(./img/arrow.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100px;
-        margin: 0 auto 0;
-    }
-
-        #intro a:hover {
-            background-image: url(./img/arrow2.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100px;
-        }
-
 nav {
     display: none;
 }
@@ -367,10 +338,6 @@ table {
         line-height: 0px;
     }
 
-    #intro {
-        min-height: 99.1vh;
-    }
-
     #menu {
         display: none;
     }
@@ -548,7 +515,6 @@ table {
     #main #feat ul {
         display: flex;
         list-style: none;
-        min-height: 70vh;
         padding: 0;
     }
 
@@ -561,7 +527,7 @@ table {
         }
 
             #main #feat ul li img {
-                max-width: 100%;
+                max-width: 40%;
             }
 
 #res {
