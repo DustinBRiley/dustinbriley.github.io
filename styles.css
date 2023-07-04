@@ -19,12 +19,6 @@ h2 {
     line-height: 0px;
 }
 
-#logo {
-    background-image: radial-gradient(circle,rgba(255,0,0,0),rgba(41, 2, 45, 0.716)), url("./img/logo.png");
-    min-height: 114px;
-    background-position: center;
-}
-
 nav {
     display: none;
 }
@@ -92,7 +86,7 @@ nav {
         right: 0rem;
         padding-top: 4vh;
         height: 96vh;
-        background-color: #1c1d1eb4;
+        background-color: #1c1d1edf;
     }
 
         #toggle:checked ~ nav ul.pages {
@@ -234,6 +228,7 @@ a {
 
             #main section div img {
                 max-width: 95%;
+                min-height: 20rem;
                 max-height: 20rem;
             }
 
@@ -375,7 +370,7 @@ table {
                     }
 
     nav {
-        background-color: #303438b1;
+        background-color: #303438e4;
         line-height: 6rem;
         max-height: 6rem;
         display: flex;
@@ -399,14 +394,16 @@ table {
             nav ul.pages #dropdown-menu {
                 display: none;
                 position: absolute;
-                min-width: 100%;
-                background-color: #30343882;
+                min-width: 150%;
+                background-color: #303438c8;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 z-index: 1;
             }
 
                 nav ul.pages #dropdown-menu a {
                     display: block;
+                    max-height: 40px;
+                    padding: 0 0 40px 0;
                     text-decoration: none;
                 }
 

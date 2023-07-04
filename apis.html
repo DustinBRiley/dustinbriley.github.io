@@ -39,78 +39,6 @@
         </ul>
     </nav>
     <div id="title">
-        <h1>Quotes API</h1>
-        PHP OOP REST API using PostgreSQL on Render.com<br>
-        <a href="https://github.com/DustinBRiley/BackendWebDev1Midterm" target="_blank">Github</a><br>
-        <a href="https://backendwebdev1midterm.dustinbriley.repl.co/api/" target="_blank">URL</a><br>
-        <table>
-            <tr>
-                <th>ROUTE</th>
-                <th>GET</th>
-            </tr>
-            <tr>
-                <td>/quotes/</td>
-                <td>All quotes are returned</td>
-            </tr>
-            <tr>
-                <td>/quotes/?id=4</td>
-                <td>The specific quote</td>
-            </tr>
-            <tr>
-                <td>/quotes/?author_id=10</td>
-                <td>All quotes from author_id=10</td>
-            </tr>
-            <tr>
-                <td>/quotes/?category_id=8</td>
-                <td>All quotes in category_id=8</td>
-            </tr>
-            <tr>
-                <td>/quotes/?author_id=3&category_id=4</td>
-                <td>All quotes from authorId=3 that are in category_id=4</td>
-            </tr>
-            <tr>
-                <td>/authors/</td>
-                <td>All authors with their id</td>
-            </tr>
-            <tr>
-                <td>/authors/?id=5</td>
-                <td>The specific author with their id</td>
-            </tr>
-            <tr>
-                <td>/categories/</td>
-                <td>All categories with their ids (id, category)</td>
-            </tr>
-            <tr>
-                <td>/categories/?id=7</td>
-                <td>The specific category with its id</td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>ROUTE</th>
-                <th>POST</th>
-                <th>PUT</th>
-                <th>DELETE</th>
-            </tr>
-            <tr>
-                <td>/quotes/</td>
-                <td>created quote (id, quote, author_id, category_id)</td>
-                <td>updated quote (id, quote, author_id, category_id)</td>
-                <td>id of deleted quote</td>
-            </tr>
-            <tr>
-                <td>/authors/</td>
-                <td>created author (id, author)</td>
-                <td>updated author (id, author)</td>
-                <td>id of deleted author</td>
-            </tr>
-            <tr>
-                <td>/categories/</td>
-                <td>created category (id, category)</td>
-                <td>updated category (id, category)</td>
-                <td>id of deleted category</td>
-            </tr>
-        </table>
         <h1>States API</h1>
         MVC style Node.js REST API using Express, Mongoose, and MongoDB<br>
         Data also provided by JSON file<br>
@@ -166,6 +94,108 @@
             <tr>
                 <td>/states/:state/funfact</td>
                 <td>The result received from MongoDB</td>
+            </tr>
+        </table>
+        <h1>Quotes API</h1>
+        PHP OOP REST API using PostgreSQL on Render.com<br>
+        <a href="https://github.com/DustinBRiley/BackendWebDev1Midterm" target="_blank">Github</a><br>
+        <a href="https://backendwebdev1midterm.dustinbriley.repl.co/" target="_blank">URL</a><br>
+        <table>
+            <tr>
+                <th>ROUTE</th>
+                <th>GET</th>
+            </tr>
+            <tr>
+                <td>/api/quotes/</td>
+                <td>All quotes are returned</td>
+            </tr>
+            <tr>
+                <td>/api/quotes/?id=4</td>
+                <td>The specific quote</td>
+            </tr>
+            <tr>
+                <td>/api/quotes/?author_id=10</td>
+                <td>All quotes from author_id=10</td>
+            </tr>
+            <tr>
+                <td>/api/quotes/?category_id=8</td>
+                <td>All quotes in category_id=8</td>
+            </tr>
+            <tr>
+                <td>/api/quotes/?author_id=3&category_id=4</td>
+                <td>All quotes from authorId=3 that are in category_id=4</td>
+            </tr>
+            <tr>
+                <td>/api/authors/</td>
+                <td>All authors with their id</td>
+            </tr>
+            <tr>
+                <td>/api/authors/?id=5</td>
+                <td>The specific author with their id</td>
+            </tr>
+            <tr>
+                <td>/api/categories/</td>
+                <td>All categories with their ids (id, category)</td>
+            </tr>
+            <tr>
+                <td>/api/categories/?id=7</td>
+                <td>The specific category with its id</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>ROUTE</th>
+                <th>POST</th>
+                <th>PUT</th>
+                <th>DELETE</th>
+            </tr>
+            <tr>
+                <td>api/quotes/</td>
+                <td>created quote (id, quote, author_id, category_id)</td>
+                <td>updated quote (id, quote, author_id, category_id)</td>
+                <td>id of deleted quote</td>
+            </tr>
+            <tr>
+                <td>api/authors/</td>
+                <td>created author (id, author)</td>
+                <td>updated author (id, author)</td>
+                <td>id of deleted author</td>
+            </tr>
+            <tr>
+                <td>api/categories/</td>
+                <td>created category (id, category)</td>
+                <td>updated category (id, category)</td>
+                <td>id of deleted category</td>
+            </tr>
+        </table>
+        <h1>Products API</h1>
+        Python Flask SQLite REST API<br>
+        <a href="https://github.com/DustinBRiley/PythonFlaskAPI" target="_blank">Github</a><br>
+        <a href="https://silken-northern-buffet.glitch.me" target="_blank">URL</a><br>
+        <table>
+            <tr>
+                <th>ROUTE</th>
+                <th>GET</th>
+                <th>POST</th>
+            </tr>
+            <tr>
+                <td>/product</td>
+                <td>gets all products</td>
+                <td>creates new product (name, description, price, quantity JSON object required)</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>ROUTE</th>
+                <th>GET</th>
+                <th>PUT</th>
+                <th>DELETE</th>
+            </tr>
+            <tr>
+                <td>/product/:id</td>
+                <td>gets product by ID</td>
+                <td>updates existing product (name, description, price, quantity JSON object required)</td>
+                <td>deletes product by id</td>
             </tr>
         </table>
     </div>
