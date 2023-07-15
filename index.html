@@ -7,20 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dustin Riley</title>
     <link rel="stylesheet" href="styles.css">
-    <script> src="main.js"</script>
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <input type="checkbox" id="toggle">
-    <label for="toggle" id="menu">MENU ≡</label>
-    <label for="toggle" id="menuc">|-></label>
-    <div>
-        <h1>Dustin Riley</h1>
-        <h2>Jr. Software Developer</h2>
-    </div>
-    <nav>
-        <ul class="pages">
-            <div id="dropdown">
-                <a href="./index.html"><li class="active">PORTFOLIO</li></a>
+    <button onclick="menu()" id="menu">MENU ≡</button>
+    <button onclick="menuc()" id="menuc">X</button>
+    <div id="nav">
+        <ul>
+            <div id="dropdown"><a href="./index.html"><li class="active">PORTFOLIO</li></a>
                 <div id="dropdown-menu">
                     <a href="./java.html">JAVA</a>
                     <a href="./cpp.html">C++</a>
@@ -37,42 +31,75 @@
             <a href="./games.html"><li>GAMES</li></a>
             <a href="./resume.html"><li>RESUME</li></a>
         </ul>
-        <ul class="icons">
-            <li class="phone"><a href="tel:+13074014917"><img src="./img/phone.png" alt="phone"></a></li>
-            <li class="email"><a href="mailto: dustinrileywork@gmail.com"><img src="./img/email.png" alt="email"></a></li>
-            <li class="git"><a href="https://github.com/dustinbriley" target=”_blank”><img src="./img/github.png" alt="github"></a></li>
-        </ul>
-    </nav>
-    <div id="main">
+
+    </div>
+    <div>
+        <div id="intro">
+            <h1>Dustin Riley</h1>
+            <h2>Jr. Software Developer</h2>
+            <ul class="icons">
+                <li><a href="tel:+13074014917"><img src="./img/phone.png"  id="phone" alt="phone"></a></li>
+                <li><a href="mailto: dustinrileywork@gmail.com"><img src="./img/email.png" id="email" alt="email"></a></li>
+                <li><a href="https://github.com/dustinbriley" target="_blank"><img src="./img/github.png" id="github" alt="github"></a></li>
+                <li><a href="./resume.html"><img src="./img/doc.png" id="resume" alt="doc"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="projects">
+        <h1>Top Projects</h1>
+    </div>
+    <div id="sections">
         <section>
-            <div>
-                <h3><a href="./java.html">JAVA</a></h3>
-                <a href="./java.html"><img src="./img/java.png" alt="Java"></a>
-            </div>
-            <div>
-                <h3><a href="./cpp.html">C++</a></h3>
-                <a href="./cpp.html"><img src="./img/c++.png" alt="C++"></a>
-            </div>
-            <div>
-                <h3><a href="./javascript.html">JAVASCRIPT</a></h3>
-                <a href="./javascript.html"><img src="./img/js.png" alt="JavaScript"></a>
-            </div>
-            <div>
-                <h3><a href="./php.html"><h3>PHP</a></h3>
-                <a href="./php.html"><img src="./img/php.png" alt="PHP"></a>
-            </div>
-            <div>
-                <h3><a href="./htmlcss.html"><h3>HTML & CSS</a></h3>
-                <a href="./htmlcss.html"><img src="./img/htmlcss.png" alt="HTML/CSS"></a>
-            </div>
-            <div>
-                <h3><a href="./python.html"><h3>PYTHON</a></h3>
-                <a href="./python.html"><img src="./img/python.png" alt="Python"></a>
-            </div>
-            <div>
-                <h3><a href="./assembly.html"><h3>ASSEMBLY</a></h3>
-                <a href="./assembly.html"><img src="./img/asm.png" alt="Assembly"></a>
-            </div>
+            <img src="./img/node.png" alt="">
+            <form action="https://github.com/DustinBRiley/BackendWebDev1Final" target="_blank">
+                <button id="git">View on Github</button>
+            </form>
+            <form action="https://conscious-platinum-napkin.glitch.me" target="_blank">
+                <button id="live">View Live Version</button>
+            </form>
+            <p>Node.js API</p>
+            <p>API for states data in JSON file and MongoDB</p>
+        </section>
+        <section>
+            <img src="./games/Capture.PNG" alt="">
+            <form action="https://dustinbriley.itch.io/space-ace-v3" target="_blank">
+                <button id="live">View Live Version</button>
+            </form>
+            <p>Space Ace</p>
+            <p>Top-down space shooter I am making in GODOT</p>
+        </section>
+        <section>
+            <img src="./img/phpapi.png" alt="">
+            <form action="https://github.com/DustinBRiley/BackendWebDev1Midterm" target="_blank">
+                <button id="git">View on Github</button>
+            </form>
+            <form action="https://backendwebdev1midterm.dustinbriley.repl.co/" target="_blank">
+                <button id="live">View Live Version</button>
+            </form>
+            <p>PHP API</p>
+            <p>An API for an online database of famous quotes</p>
+        </section>
+        <section>
+            <img src="./games/Memory.PNG" alt="">
+            <form action="" target="_blank">
+                <button id="git">View on Github</button>
+            </form>
+            <form action="" target="_blank">
+                <button id="live">View Live Version</button>
+            </form>
+            <p>Memory</p>
+            <p>Python memory game with bruteforce protection</p>
+        </section>
+        <section>
+            <img src="./img/flask.png" alt="">
+            <form action="https://github.com/DustinBRiley/PythonFlaskAPI" target="_blank">
+                <button id="git">View on Github</button>
+            </form>
+            <form action="https://silken-northern-buffet.glitch.me" target="_blank">
+                <button id="live">View Live Version</button>
+            </form>
+            <p>Python Flask API</p>
+            <p>Simple API of products</p>
         </section>
     </div>
 </body>
