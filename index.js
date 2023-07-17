@@ -1,11 +1,11 @@
 let prevY = 0
 window.onscroll = () => {
-    if(window.innerWidth >= 600){
+    if(window.innerWidth >= 821){
         if(prevY > window.scrollY) {
             document.getElementById("nav").style.top = "0";
         }
         else {
-            document.getElementById("nav").style.top = "-50px";
+            document.getElementById("nav").style.top = "-10vh";
             document.getElementById("dropdown-menu").style.display = "none";
         }
         prevY = window.scrollY;
@@ -66,7 +66,7 @@ function menuc(){
 }
 
 window.onresize = () => {
-    if(window.innerWidth >= 600) {
+    if(window.innerWidth >= 821) {
         document.getElementById("menu").style.display = "none";
         document.getElementById("menuc").style.display = "none";
         document.getElementById("nav").style.display = "flex";

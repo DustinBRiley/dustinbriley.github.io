@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+#wrapper{
+    background: linear-gradient(90deg, #061a35 0%, #1b73e1 50%, #061a35 100%);
+    min-height: 100vh;
+}
+
 #toggle{
     display: none;
 }
@@ -29,33 +34,26 @@
 
 #nav{
     display: none;
+    flex-direction: column;
     position: fixed;
     text-align: center;
     font-size: 3vh;
     top: 0;
-    justify-content: space-between;
+    min-width: 100vw;
+    background-color: #000000da;
 }
 
-    #nav ul{
-        padding: 0;
-        min-width: 100vw;
-        list-style: none;
-        justify-content: space-around;
-        background-color: #000000da;
+    #nav a{
+        display: block;
+        padding: 1vh;
     }
 
-        #nav ul a{
-            display: block;
-            padding: 10px;
-        }
-
-        #nav ul a:hover{
-            background-color: #032379da;
-        }
+    #nav a:hover{
+        background-color: #032379da;
+    }
 
 #dropdown-menu{
     display: none;
-    background-color: #000000da;
     flex-direction: column;
 }
 
@@ -99,7 +97,7 @@ a{
     color: white;
     text-align: center;
     font-size: 2vh;
-    margin: 1vh 5vw 0 5vw;
+    margin: 2vh 5vw 0 5vw;
     height: 5vh;
     border-bottom: 50px;
     background-color: #000000db;
@@ -110,15 +108,17 @@ a{
     display: flex;
     width: 90vw;
     margin: 0 5vw 0 5vw;
+    background-color: #000000a9;
+    padding: 0 0 2vh 0;
     flex-direction: column;
 }
 
 section{
     color:white;
     font-size: 2vh;
-    margin: 2vh 0 0 0;
+    margin: 2vh 2vw 0 2vw;
     border: #000000db;
-    background-color: #000000;
+    background-color: #000000e2;
     box-shadow: 10px 5px 5px #000000;
 }
 
@@ -129,29 +129,77 @@ section{
 
 #git{
     background-color: rgba(0, 174, 255, 0.476);
+    color: rgb(210, 206, 206);
 }
 
 #live{
     background-color:rgba(136, 222, 135, 0.754) ;
 }
 
-@media (min-width: 600px) {
+#title{
+    width: 90vw;
+    margin: 0 5vw 0 5vw;
+    text-align: center;
+    font-size: 3vh;
+    color: white;
+    background-color: #000000db;
+}
+
+table {
+    min-width: 90vw;
+    margin: 0 5vw;
+    padding: 2vh 5vw;
+    border-right: 2px;
+    font-size: 2vh;
+    color: white;
+    border-color: #003f4d;
+    background-color: #000000a9;
+}
+
+    table th {
+        text-transform: uppercase;
+        background-color: #303438b1;
+        border: 2px solid #003f4d;
+    }
+
+    table td {
+        border-top: 0px;
+        border-style: dotted solid;
+        border-color: #003f4d;
+    }
+
+        table td img {
+            width: 100%;
+            max-height: 10em;
+        }
+
+        table td video {
+            max-width: 100%;
+            max-height: 10em;
+        }
+
+@media (min-width: 821px) {
+    #toppad{
+        padding:3vh;
+    }
+
     #menu{
         display: none;
     }
 
     #nav{
         display: flex;
-        font-size: 4vh;
+        flex-direction: row;
+        justify-content: space-evenly;
         transition: top 0.3s;
     }
 
-        #nav ul{
-            display: flex;
-        }
+    #nav a{
+        font-size: 4vh;
+    }
 
     #intro{
-        min-height: 100vh;
+        height: 100vh;
         background-size: 100vw 100vh;
         color: #ffffff;
     }
@@ -171,6 +219,7 @@ section{
         }
 
     #dropdown-menu{
+        background-color: #000000da;
         position: absolute;
     }
 
@@ -184,5 +233,14 @@ section{
     section{
         width: 25.5vw;
         margin: 2vh 2vw 0 2vw;
+    }
+
+    #title{
+        margin: 2vh 5vw 0 5vw;
+        font-size: 4vh;
+    }
+
+    table{
+        font-size: 3vh;
     }
 }

@@ -5,118 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dustin Riley: JavaScript</title>
+    <title>Dustin Riley</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <input type="checkbox" id="toggle">
-    <label for="toggle" id="menu">MENU ≡</label>
-    <label for="toggle" id="menuc">|-></label>
-    <nav>
-        <ul class="pages">
-            <div id="dropdown">
-                <a href="./index.html"><li>PORTFOLIO</li></a>
+    <div id="wrapper">
+        <button onclick="menu()" id="menu">MENU ≡</button>
+        <button onclick="menuc()" id="menuc">X</button>
+        <div id="nav">
+            <a href="./index.html">DUSTIN RILEY</a>
+            <div id="dropdown"><a href="./portfolio.html">PORTFOLIO</a>
                 <div id="dropdown-menu">
                     <a href="./java.html">JAVA</a>
                     <a href="./cpp.html">C++</a>
                     <a href="./javascript.html" class="active">JAVASCRIPT</a>
-                    <a href="./php.html">PHP</a>
                     <a href="./htmlcss.html">HTML & CSS</a>
+                    <a href="./php.html">PHP</a>
                     <a href="./python.html">PYTHON</a>
                     <a href="./sql.html">SQL</a>
                     <a href="./datastructures.html">DATA STRUCTURES</a>
                     <a href="./assembly.html">ASSEMBLY</a>
                 </div>
             </div>
-            <a href="./apis.html"><li>APIS</li></a>
-            <a href="./games.html"><li>GAMES</li></a>
-            <a href="./resume.html"><li>RESUME</li></a>
-        </ul>
-        <ul class="icons">
-            <li class="phone"><a href="tel:+13074014917"><img src="./img/phone.png" alt="phone"></a></li>
-            <li class="email"><a href="mailto: dustinrileywork@gmail.com"><img src="./img/email.png" alt="email"></a></li>
-            <li class="git"><a href="https://github.com/dustinbriley" target=”_blank”><img src="./img/github.png" alt="github"></a></li>
-        </ul>
-    </nav>
-    <div id="title">
-        <h1>JavaScript</h1>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Code</th>
-                <th>Result</th>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/ambitious-respected-pentaceratops" target="_blank">Variables</a></td>
-                <td><a href="https://glitch.com/edit/#!/ambitious-respected-pentaceratops" target="_blank"><img src="./img/code/js/01.PNG" alt="code"></a></td>
-                <td><a href="https://ambitious-respected-pentaceratops.glitch.me/" target="_blank"><img src="./img/code/js/1.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/leather-elegant-dessert" target="_blank">Math and .methods()</a></td>
-                <td><a href="https://glitch.com/edit/#!/leather-elegant-dessert" target="_blank"><img src="./img/code/js/02.PNG" alt="code"></a></td>
-                <td><a href="https://leather-elegant-dessert.glitch.me/" target="_blank"><img src="./img/code/js/2.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/free-onyx-bonobo" target="_blank">If and Switch Statements</a></td>
-                <td><a href="https://glitch.com/edit/#!/free-onyx-bonobo" target="_blank"><img src="./img/code/js/03.PNG" alt="code"></a></td>
-                <td><a href="https://free-onyx-bonobo.glitch.me/" target="_blank"><img src="./img/code/js/3.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/ash-cuboid-iguanacolossus" target="_blank">Loops</a></td>
-                <td><a href="https://glitch.com/edit/#!/ash-cuboid-iguanacolossus" target="_blank"><img src="./img/code/js/04.PNG" alt="code"></a></td>
-                <td><a href="https://ash-cuboid-iguanacolossus.glitch.me/" target="_blank"><img src="./img/code/js/4.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/scalloped-aspiring-telescope" target="_blank">Functions</a></td>
-                <td><a href="https://glitch.com/edit/#!/scalloped-aspiring-telescope" target="_blank"><img src="./img/code/js/05.PNG" alt="code"></a></td>
-                <td><a href="https://scalloped-aspiring-telescope.glitch.me/" target="_blank"><img src="./img/code/js/5.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/dazzling-fate-printer" target="_blank">Arrays</a></td>
-                <td><a href="https://glitch.com/edit/#!/dazzling-fate-printer" target="_blank"><img src="./img/code/js/06.PNG" alt="code"></a></td>
-                <td><a href="https://dazzling-fate-printer.glitch.me/" target="_blank"><img src="./img/code/js/6.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/aboard-buttered-payment" target="_blank">Objects</a></td>
-                <td><a href="https://glitch.com/edit/#!/aboard-buttered-payment" target="_blank"><img src="./img/code/js/07.PNG" alt="code"></a></td>
-                <td><a href="https://aboard-buttered-payment.glitch.me/" target="_blank"><img src="./img/code/js/7.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/shrub-cliff-emoji" target="_blank">Classes</a></td>
-                <td><a href="https://glitch.com/edit/#!/shrub-cliff-emoji" target="_blank"><img src="./img/code/js/08.PNG" alt="code"></a></td>
-                <td><a href="https://shrub-cliff-emoji.glitch.me/" target="_blank"><img src="./img/code/js/8.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/sprout-omniscient-tumble" target="_blank">Errors</a></td>
-                <td><a href="https://glitch.com/edit/#!/sprout-omniscient-tumble" target="_blank"><img src="./img/code/js/09.PNG" alt="code"></a></td>
-                <td><a href="https://sprout-omniscient-tumble.glitch.me/" target="_blank"><img src="./img/code/js/9.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/far-forest-smartphone" target="_blank">DOM</a></td>
-                <td><a href="https://glitch.com/edit/#!/far-forest-smartphone" target="_blank"><img src="./img/code/js/010.PNG" alt="code"></a></td>
-                <td><a href="https://far-forest-smartphone.glitch.me/" target="_blank"><img src="./img/code/js/10.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/glen-fog-gladiolus" target="_blank">Event Listeners</a></td>
-                <td><a href="https://glitch.com/edit/#!/glen-fog-gladiolus" target="_blank"><img src="./img/code/js/011.PNG" alt="code"></a></td>
-                <td><a href="https://glen-fog-gladiolus.glitch.me/" target="_blank"><img src="./img/code/js/11.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/seen-fearless-meteorology" target="_blank">Higher Order Functions</a></td>
-                <td><a href="https://glitch.com/edit/#!/seen-fearless-meteorology" target="_blank"><img src="./img/code/js/012.PNG" alt="code"></a></td>
-                <td><a href="https://seen-fearless-meteorology.glitch.me/" target="_blank"><img src="./img/code/js/12.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://glitch.com/edit/#!/grave-shiny-christmas" target="_blank">Promises</a></td>
-                <td><a href="https://glitch.com/edit/#!/grave-shiny-christmas" target="_blank"><img src="./img/code/js/013.PNG" alt="code"></a></td>
-                <td><a href="https://grave-shiny-christmas.glitch.me/" target="_blank"><img src="./img/code/js/13.PNG" alt="result"></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://legendary-cat-46ba3e.netlify.app/" target="_blank">Acme Blogs</a></td>
-                <td><a href="https://legendary-cat-46ba3e.netlify.app/" target="_blank"><img src="./img/code/js/acmecode.PNG" alt=""></a></td>
-                <td><a href="https://legendary-cat-46ba3e.netlify.app/" target="_blank"><img src="./img/code/js/acme.PNG" alt="result"></a></td>
-            </tr>
-        </table>
+            <a href="./apis.html">APIS</a>
+            <a href="./games.html">GAMES</a>
+            <a href="./resume.html">RESUME</a>
+        </div>
+        <div id="toppad"></div>
+        <div id="title">
+            <h1>JavaScript</h1>
+        </div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Code</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/ambitious-respected-pentaceratops" target="_blank">Variables</a></td>
+                    <td><a href="https://glitch.com/edit/#!/ambitious-respected-pentaceratops" target="_blank"><img src="./img/code/js/01.PNG" alt="code"></a></td>
+                    <td><a href="https://ambitious-respected-pentaceratops.glitch.me/" target="_blank"><img src="./img/code/js/1.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/leather-elegant-dessert" target="_blank">Math and .methods()</a></td>
+                    <td><a href="https://glitch.com/edit/#!/leather-elegant-dessert" target="_blank"><img src="./img/code/js/02.PNG" alt="code"></a></td>
+                    <td><a href="https://leather-elegant-dessert.glitch.me/" target="_blank"><img src="./img/code/js/2.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/free-onyx-bonobo" target="_blank">If and Switch Statements</a></td>
+                    <td><a href="https://glitch.com/edit/#!/free-onyx-bonobo" target="_blank"><img src="./img/code/js/03.PNG" alt="code"></a></td>
+                    <td><a href="https://free-onyx-bonobo.glitch.me/" target="_blank"><img src="./img/code/js/3.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/ash-cuboid-iguanacolossus" target="_blank">Loops</a></td>
+                    <td><a href="https://glitch.com/edit/#!/ash-cuboid-iguanacolossus" target="_blank"><img src="./img/code/js/04.PNG" alt="code"></a></td>
+                    <td><a href="https://ash-cuboid-iguanacolossus.glitch.me/" target="_blank"><img src="./img/code/js/4.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/scalloped-aspiring-telescope" target="_blank">Functions</a></td>
+                    <td><a href="https://glitch.com/edit/#!/scalloped-aspiring-telescope" target="_blank"><img src="./img/code/js/05.PNG" alt="code"></a></td>
+                    <td><a href="https://scalloped-aspiring-telescope.glitch.me/" target="_blank"><img src="./img/code/js/5.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/dazzling-fate-printer" target="_blank">Arrays</a></td>
+                    <td><a href="https://glitch.com/edit/#!/dazzling-fate-printer" target="_blank"><img src="./img/code/js/06.PNG" alt="code"></a></td>
+                    <td><a href="https://dazzling-fate-printer.glitch.me/" target="_blank"><img src="./img/code/js/6.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/aboard-buttered-payment" target="_blank">Objects</a></td>
+                    <td><a href="https://glitch.com/edit/#!/aboard-buttered-payment" target="_blank"><img src="./img/code/js/07.PNG" alt="code"></a></td>
+                    <td><a href="https://aboard-buttered-payment.glitch.me/" target="_blank"><img src="./img/code/js/7.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/shrub-cliff-emoji" target="_blank">Classes</a></td>
+                    <td><a href="https://glitch.com/edit/#!/shrub-cliff-emoji" target="_blank"><img src="./img/code/js/08.PNG" alt="code"></a></td>
+                    <td><a href="https://shrub-cliff-emoji.glitch.me/" target="_blank"><img src="./img/code/js/8.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/sprout-omniscient-tumble" target="_blank">Errors</a></td>
+                    <td><a href="https://glitch.com/edit/#!/sprout-omniscient-tumble" target="_blank"><img src="./img/code/js/09.PNG" alt="code"></a></td>
+                    <td><a href="https://sprout-omniscient-tumble.glitch.me/" target="_blank"><img src="./img/code/js/9.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/far-forest-smartphone" target="_blank">DOM</a></td>
+                    <td><a href="https://glitch.com/edit/#!/far-forest-smartphone" target="_blank"><img src="./img/code/js/010.PNG" alt="code"></a></td>
+                    <td><a href="https://far-forest-smartphone.glitch.me/" target="_blank"><img src="./img/code/js/10.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/glen-fog-gladiolus" target="_blank">Event Listeners</a></td>
+                    <td><a href="https://glitch.com/edit/#!/glen-fog-gladiolus" target="_blank"><img src="./img/code/js/011.PNG" alt="code"></a></td>
+                    <td><a href="https://glen-fog-gladiolus.glitch.me/" target="_blank"><img src="./img/code/js/11.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/seen-fearless-meteorology" target="_blank">Higher Order Functions</a></td>
+                    <td><a href="https://glitch.com/edit/#!/seen-fearless-meteorology" target="_blank"><img src="./img/code/js/012.PNG" alt="code"></a></td>
+                    <td><a href="https://seen-fearless-meteorology.glitch.me/" target="_blank"><img src="./img/code/js/12.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://glitch.com/edit/#!/grave-shiny-christmas" target="_blank">Promises</a></td>
+                    <td><a href="https://glitch.com/edit/#!/grave-shiny-christmas" target="_blank"><img src="./img/code/js/013.PNG" alt="code"></a></td>
+                    <td><a href="https://grave-shiny-christmas.glitch.me/" target="_blank"><img src="./img/code/js/13.PNG" alt="result"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://legendary-cat-46ba3e.netlify.app/" target="_blank">Acme Blogs</a></td>
+                    <td><a href="https://legendary-cat-46ba3e.netlify.app/" target="_blank"><img src="./img/code/js/acmecode.PNG" alt=""></a></td>
+                    <td><a href="https://legendary-cat-46ba3e.netlify.app/" target="_blank"><img src="./img/code/js/acme.PNG" alt="result"></a></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>

@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dustin Riley: SQL</title>
+    <title>Dustin Riley</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <input type="checkbox" id="toggle">
-    <label for="toggle" id="menu">MENU ≡</label>
-    <label for="toggle" id="menuc">|-></label>
-    <nav>
-        <ul class="pages">
-            <div id="dropdown">
-                <a href="./index.html"><li>PORTFOLIO</li></a>
+    <div id="wrapper">
+        <button onclick="menu()" id="menu">MENU ≡</button>
+        <button onclick="menuc()" id="menuc">X</button>
+        <div id="nav">
+            <a href="./index.html">DUSTIN RILEY</a>
+            <div id="dropdown"><a href="./portfolio.html">PORTFOLIO</a>
                 <div id="dropdown-menu">
                     <a href="./java.html">JAVA</a>
                     <a href="./cpp.html">C++</a>
@@ -28,45 +28,42 @@
                     <a href="./assembly.html">ASSEMBLY</a>
                 </div>
             </div>
-            <a href="./apis.html"><li>APIS</li></a>
-            <a href="./games.html"><li>GAMES</li></a>
-            <a href="./resume.html"><li>RESUME</li></a>
-        </ul>
-        <ul class="icons">
-            <li class="phone"><a href="tel:+13074014917"><img src="./img/phone.png" alt="phone"></a></li>
-            <li class="email"><a href="mailto: dustinrileywork@gmail.com"><img src="./img/email.png" alt="email"></a></li>
-            <li class="git"><a href="https://github.com/dustinbriley" target=”_blank”><img src="./img/github.png" alt="github"></a></li>
-        </ul>
-    </nav>
-    <div id="title">
-        <h1>SQL</h1>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Preview</th>
-            </tr>
-            <tr>
-                <td><a href="" target="_blank"></a></td>
-                <td></td>
-                <td><a href="" target="_blank"><img src="" alt="Preview"></a></td>
-            </tr>
-            <tr>
-                <td><a href="" target="_blank"></a></td>
-                <td></td>
-                <td><a href="" target="_blank"><img src="" alt="Preview"></a></td>
-            </tr>
-            <tr>
-                <td><a href="" target="_blank"></a></td>
-                <td></td>
-                <td><a href="" target="_blank"><img src="" alt="Preview"></a></td>
-            </tr>
-            <tr>
-                <td><a href="" target="_blank"></a></td>
-                <td></td>
-                <td><a href="" target="_blank"><img src="" alt="Preview"></a></td>
-            </tr>
-        </table>
+            <a href="./apis.html">APIS</a>
+            <a href="./games.html">GAMES</a>
+            <a href="./resume.html">RESUME</a>
+        </div>
+        <div id="toppad"></div>
+        <div id="title">
+            <h1>SQL</h1>
+        </div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Preview</th>
+                </tr>
+                <tr>
+                    <td><a href="" target="_blank"></a></td>
+                    <td></td>
+                    <td><a href="" target="_blank"><img src="" alt="Preview"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="" target="_blank"></a></td>
+                    <td></td>
+                    <td><a href="" target="_blank"><img src="" alt="Preview"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="" target="_blank"></a></td>
+                    <td></td>
+                    <td><a href="" target="_blank"><img src="" alt="Preview"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="" target="_blank"></a></td>
+                    <td></td>
+                    <td><a href="" target="_blank"><img src="" alt="Preview"></a></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>

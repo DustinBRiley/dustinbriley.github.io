@@ -10,13 +10,12 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <input type="checkbox" id="toggle">
-    <label for="toggle" id="menu">MENU ≡</label>
-    <label for="toggle" id="menuc">|-></label>
-    <nav>
-        <ul class="pages">
-            <div id="dropdown">
-                <a href="./index.html"><li class="active">PORTFOLIO</li></a>
+    <div id="wrapper">
+        <button onclick="menu()" id="menu">MENU ≡</button>
+        <button onclick="menuc()" id="menuc">X</button>
+        <div id="nav">
+            <a href="./index.html">DUSTIN RILEY</a>
+            <div id="dropdown"><a href="./portfolio.html" class="active">PORTFOLIO</a>
                 <div id="dropdown-menu">
                     <a href="./java.html">JAVA</a>
                     <a href="./cpp.html">C++</a>
@@ -29,42 +28,37 @@
                     <a href="./assembly.html">ASSEMBLY</a>
                 </div>
             </div>
-            <a href="./apis.html"><li>APIS</li></a>
-            <a href="./games.html"><li>GAMES</li></a>
-            <a href="./resume.html"><li>RESUME</li></a>
-        </ul>
-    </nav>
-    <div id="main">
-        <section>
-            <div>
-                <h3><a href="./java.html">JAVA</a></h3>
+            <a href="./apis.html">APIS</a>
+            <a href="./games.html">GAMES</a>
+            <a href="./resume.html">RESUME</a>
+        </div>
+        <div id="toppad"></div>
+        <div id="title">
+            <h1>Portfolio</h1>
+        </div>
+        <div id="sections">
+            <section>
                 <a href="./java.html"><img src="./img/java.png" alt="Java"></a>
-            </div>
-            <div>
-                <h3><a href="./cpp.html">C++</a></h3>
+            </section>
+            <section>
                 <a href="./cpp.html"><img src="./img/c++.png" alt="C++"></a>
-            </div>
-            <div>
-                <h3><a href="./javascript.html">JAVASCRIPT</a></h3>
+            </section>
+            <section>
                 <a href="./javascript.html"><img src="./img/js.png" alt="JavaScript"></a>
-            </div>
-            <div>
-                <h3><a href="./php.html"><h3>PHP</a></h3>
+            </section>
+            <section>
                 <a href="./php.html"><img src="./img/php.png" alt="PHP"></a>
-            </div>
-            <div>
-                <h3><a href="./htmlcss.html"><h3>HTML & CSS</a></h3>
+            </section>
+            <section>
                 <a href="./htmlcss.html"><img src="./img/htmlcss.png" alt="HTML/CSS"></a>
-            </div>
-            <div>
-                <h3><a href="./python.html"><h3>PYTHON</a></h3>
+            </section>
+            <section>
                 <a href="./python.html"><img src="./img/python.png" alt="Python"></a>
-            </div>
-            <div>
-                <h3><a href="./assembly.html"><h3>ASSEMBLY</a></h3>
+            </section>
+            <section>
                 <a href="./assembly.html"><img src="./img/asm.png" alt="Assembly"></a>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 </body>
 </html>
