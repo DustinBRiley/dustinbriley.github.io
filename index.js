@@ -12,13 +12,15 @@ window.onscroll = () => {
     }
 }
 
-let drop = document.getElementById("dropdown")
-drop.addEventListener('mouseover', () => {
-    document.getElementById("dropdown-menu").style.display = "flex";
-})
-drop.addEventListener('mouseleave', () => {
-    document.getElementById("dropdown-menu").style.display = "none";
-})
+if(window.innerWidth >= 821) {
+    let drop = document.getElementById("dropdown")
+    drop.addEventListener('mouseover', () => {
+        document.getElementById("dropdown-menu").style.display = "flex";
+    })
+    drop.addEventListener('mouseleave', () => {
+        document.getElementById("dropdown-menu").style.display = "none";
+    })
+}
 
 let phone = document.getElementById("phone")
 phone.addEventListener('mouseover', () => {
@@ -71,9 +73,20 @@ window.onresize = () => {
         document.getElementById("menuc").style.display = "none";
         document.getElementById("nav").style.display = "flex";
         document.getElementById("dropdown-menu").style.display = "none";
+        let drop = document.getElementById("dropdown")
+        drop.addEventListener('mouseover', () => {
+            document.getElementById("dropdown-menu").style.display = "flex";
+        })
+        drop.addEventListener('mouseleave', () => {
+            document.getElementById("dropdown-menu").style.display = "none";
+        })
     }
     else {
         menuc()
         document.getElementById("menu").style.display = "block";
+        let drop = document.getElementById("dropdown")
+        drop.addEventListener('mouseleave', () => {
+            document.getElementById("dropdown-menu").style.display = "flex";
+        })
     }
 }
