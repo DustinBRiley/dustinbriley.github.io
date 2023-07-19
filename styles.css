@@ -136,11 +136,6 @@ section{
         text-align: center;
     }
 
-    section iframe{
-        width: 100%;
-        height: 30vh;
-    }
-
     section div{
         display: flex;
         justify-content: center;
