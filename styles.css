@@ -5,6 +5,7 @@
 #wrapper{
     background: linear-gradient(90deg, #061a35 0%, #1b73e1 50%, #061a35 100%);
     min-height: 100vh;
+    padding: 0 0 2vh 0;
 }
 
 #toggle{
@@ -101,7 +102,7 @@ a{
     color: white;
     text-align: center;
     font-size: 2vh;
-    margin: 2vh 5vw 0 5vw;
+    margin: 0 5vw;
     height: 5vh;
     border-bottom: 50px;
     background-color: #000000db;
@@ -175,6 +176,24 @@ button{
     background-color: #000000db;
 }
 
+#res{
+    display: flex;
+    width: 90vw;
+    height: fit-content;
+    justify-content: center;
+    margin: 0 5vw;
+}
+
+    #res img{
+        max-width: 100%;
+        height: auto;
+    }
+
+#dldiv{
+    display: flex;
+    justify-content: center;
+}
+
 table {
     min-width: 90vw;
     margin: 0 5vw;
@@ -209,8 +228,8 @@ table {
         }
 
 @media screen and (orientation:landscape) {
-    #toppad{
-        padding:4vh;
+    #wrapper{
+        padding: 8vh 0 2vh 0;
     }
 
     #menu{
