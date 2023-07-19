@@ -1,6 +1,6 @@
 let prevY = 0
 window.onscroll = () => {
-    if(window.innerWidth >= 821){
+    if(window.matchMedia("(orientation:landscape)").matches) {
         if(prevY > window.scrollY) {
             document.getElementById("nav").style.top = "0";
         }
@@ -12,7 +12,7 @@ window.onscroll = () => {
     }
 }
 
-if(window.innerWidth >= 821) {
+if(window.matchMedia("(orientation:landscape)").matches) {
     let drop = document.getElementById("dropdown")
     drop.addEventListener('mouseover', () => {
         document.getElementById("dropdown-menu").style.display = "flex";
@@ -67,13 +67,21 @@ function menuc(){
     document.getElementById("menu").style.top = "1%";
 }
 
-window.onresize = () => {
-    if(window.innerWidth >= 821) {
+let drop = document.getElementById("dropdown")
+
+window.matchMedia("(orientation: portrait)").addEventListener("change", (e) => {
+    if (e.matches) {
+        menuc()
+        document.getElementById("menu").style.display = "block";
+        document.getElementById("nav").style.top = "0";
+        drop.addEventListener('mouseleave', () => {
+            document.getElementById("dropdown-menu").style.display = "flex";
+        })
+    } else {
         document.getElementById("menu").style.display = "none";
         document.getElementById("menuc").style.display = "none";
         document.getElementById("nav").style.display = "flex";
         document.getElementById("dropdown-menu").style.display = "none";
-        let drop = document.getElementById("dropdown")
         drop.addEventListener('mouseover', () => {
             document.getElementById("dropdown-menu").style.display = "flex";
         })
@@ -81,12 +89,4 @@ window.onresize = () => {
             document.getElementById("dropdown-menu").style.display = "none";
         })
     }
-    else {
-        menuc()
-        document.getElementById("menu").style.display = "block";
-        let drop = document.getElementById("dropdown")
-        drop.addEventListener('mouseleave', () => {
-            document.getElementById("dropdown-menu").style.display = "flex";
-        })
-    }
-}
+})
