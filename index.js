@@ -67,8 +67,6 @@ function menuc(){
     document.getElementById("menu").style.top = "1%";
 }
 
-let drop = document.getElementById("dropdown")
-
 window.matchMedia("(orientation: portrait)").addEventListener("change", (e) => {
     if (e.matches) {
         menuc()

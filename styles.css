@@ -189,7 +189,7 @@ button{
     justify-content: center;
 }
 
-table {
+table{
     min-width: 90vw;
     margin: 0 5vw;
     padding: 2vh 5vw;
@@ -200,27 +200,41 @@ table {
     background-color: #000000a9;
 }
 
-    table th {
+    table th{
         text-transform: uppercase;
         background-color: #303438b1;
         border: 2px solid #003f4d;
     }
 
-    table td {
+    table td{
         border-top: 0px;
         border-style: dotted solid;
         border-color: #003f4d;
     }
 
-        table td img {
+        table td img{
             width: 100%;
             max-height: 10em;
         }
 
-        table td video {
+        table td video{
             max-width: 100%;
             max-height: 10em;
         }
+
+        table td button{
+            color: white;
+            background-color: #008cff;
+        }
+
+#vid{
+    display: none;
+}
+
+#vidbut{
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (orientation:landscape) {
     #wrapper{
@@ -290,5 +304,14 @@ table {
 
     table{
         font-size: 3vh;
+    }
+
+    #vid{
+        display: block;
+    }
+
+    #vidbut{
+        display: none;
+        justify-content: center;
     }
 }
